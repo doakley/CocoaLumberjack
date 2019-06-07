@@ -10,6 +10,10 @@ let package = Package(
         .library(
             name: "CocoaLumberjack",
             targets: ["CocoaLumberjack"]),
+	.library(
+	    name: "CocoaLumberjackSwift",
+	    targets: ["CocoaLumberjackSwift"]),
+	
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -22,5 +26,9 @@ let package = Package(
             name: "CocoaLumberjack",
 	    dependencies: [],
 	    path: "Classes"),
+        .target(
+            name: "CocoaLumberjackSwift",
+            dependencies: [],
+            path: "Classes"),
     ]
 )
